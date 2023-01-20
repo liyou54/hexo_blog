@@ -10,8 +10,11 @@
         <link rel="alternate" href="http://example.com/2023/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8AGithubAction%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%B8%A9%E5%9D%91/"/>
         <content type="html">&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt; 是一个静态博客框架，能够允许用户将 Markdown 转化为 html，生成静态网页，其支持 gitbub page 作为服务器进行部署。&lt;/p&gt;
 &lt;h1 id=&#34;环境部署&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#环境部署&#34;&gt;#&lt;/a&gt; 环境部署&lt;/h1&gt;
-&lt;h2 id=&#34;1-安装git&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-安装git&#34;&gt;#&lt;/a&gt; 1 安装 git&lt;/h2&gt;
-&lt;h2 id=&#34;2-安装nodejs&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-安装nodejs&#34;&gt;#&lt;/a&gt; 2 安装 nodejs&lt;/h2&gt;
+&lt;h2 id=&#34;安装git&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装git&#34;&gt;#&lt;/a&gt; 安装 git&lt;/h2&gt;
+&lt;h2 id=&#34;安装nodejs&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装nodejs&#34;&gt;#&lt;/a&gt; 安装 nodejs&lt;/h2&gt;
+&lt;p&gt;‘’’ shell&lt;br&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ub2RlanMub3JnL3poLXR3L2Rvd25sb2FkLw==&#34;&gt;https://nodejs.org/zh-tw/download/&lt;/span&gt;&lt;br&gt;
+‘’’&lt;/p&gt;
 &lt;h1 id=&#34;主题安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#主题安装&#34;&gt;#&lt;/a&gt; 主题安装&lt;/h1&gt;
 &lt;h1 id=&#34;github-acition-自动化部署&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#github-acition-自动化部署&#34;&gt;#&lt;/a&gt; Github Acition 自动化部署&lt;/h1&gt;
 </content>
@@ -36,6 +39,6 @@
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
 </content>
-        <updated>2023-01-20T11:24:37.123Z</updated>
+        <updated>2023-01-20T11:30:23.927Z</updated>
     </entry>
 </feed>
