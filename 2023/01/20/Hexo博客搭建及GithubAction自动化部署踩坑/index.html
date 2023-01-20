@@ -74,7 +74,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>1.2k</span>
+    <span>1.5k</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -115,12 +115,12 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?675981"></li>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?898092"></li>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?397811"></li>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?180187"></li>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?648265"></li>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?474148"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?196414"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?422433"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?444584"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?41029"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?429139"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?204328"></li>
         </ul>
       </div>
     </header>
@@ -184,6 +184,8 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
 <span class="red">Ps:</span> 这里，我们自定义自己的主题配置文件时最好在根目录创建<span class="kbd red">_config. 主题名称 /.yml</span><br>
 <span class="red">Ps1:</span> 搜索需要注册<span class="exturl" data-url="aHR0cHM6Ly93d3cuYWxnb2xpYS5jb20vdXNlcnMvc2lnbl9pbg=="> Algolia</span> 并且在运行<span class="kbd red"> hexo g</span> 之前运行<span class="kbd red"> hexo algolia</span>。然后修改：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">algolia:</span></span><br><span class="line">  <span class="attr">appId:</span> <span class="string">&quot;xxxx&quot;</span></span><br><span class="line">  <span class="attr">apiKey:</span> <span class="string">&quot;xxx&quot;</span></span><br><span class="line">  <span class="attr">adminApiKey:</span> <span class="string">&quot;xxx&quot;</span></span><br><span class="line">  <span class="attr">chunkSize:</span> <span class="number">5000</span></span><br><span class="line">  <span class="attr">indexName:</span> <span class="string">&quot;xxxx&quot;</span></span><br><span class="line">  <span class="attr">fields:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">title</span> <span class="comment">#必须配置</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">path</span> <span class="comment">#必须配置</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">categories</span> <span class="comment">#推荐配置</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">content:strip:truncate,0,4000</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">gallery</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">photos</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">tags</span></span><br></pre></td></tr></table></figure>
+<p><span class="red">Ps3:</span> 评论需要注册<span class="exturl" data-url="aHR0cHM6Ly9sZWFuY2xvdWQuY24v"> Learncode</span> 并且修改配置文件</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">appId:</span> <span class="string">xxxx</span></span><br><span class="line">  <span class="attr">appKey:</span> <span class="string">xxxx</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">ヽ(○´∀`)ﾉ♪</span> <span class="comment"># Comment box placeholder</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">mp</span> <span class="comment"># Gravatar style : mp, identicon, monsterid, wavatar, robohash, retro</span></span><br><span class="line">  <span class="attr">pageSize:</span> <span class="number">10</span> <span class="comment"># Pagination size</span></span><br><span class="line">  <span class="attr">lang:</span> <span class="string">en</span></span><br><span class="line">  <span class="attr">visitor:</span> <span class="literal">true</span> <span class="comment"># Article reading statistic</span></span><br></pre></td></tr></table></figure>
 <h1 id="github-acition-自动化部署"><a class="markdownIt-Anchor" href="#github-acition-自动化部署">#</a> Github Acition 自动化部署</h1>
 
   </div>
@@ -196,7 +198,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2023-01-20 12:41:56" itemprop="dateModified" datetime="2023-01-20T12:41:56+00:00">2023-01-20</time>
+    <time title="Modified: 2023-01-20 12:47:33" itemprop="dateModified" datetime="2023-01-20T12:47:33+00:00">2023-01-20</time>
   </span>
   <span id="2023/01/20/Hexo博客搭建及GithubAction自动化部署踩坑/" class="item leancloud_visitors" data-flag-title="Hexo博客搭建及GithubAction自动化部署踩坑" title="Views">
       <span class="icon">
@@ -259,7 +261,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
     <div class="item left">
       
 
-  <a href="/2023/01/20/hello-world/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tuapi.eees.cc&#x2F;api.php?category&#x3D;dongman&amp;type&#x3D;302&amp;?640486" title="Hello World">
+  <a href="/2023/01/20/hello-world/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tuapi.eees.cc&#x2F;api.php?category&#x3D;dongman&amp;type&#x3D;302&amp;?48761" title="Hello World">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>Hello World</h3>
@@ -382,7 +384,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8AGithubAction%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%B8%A9%E5%9D%91/" title="Hexo博客搭建及GithubAction自动化部署踩坑">Hexo博客搭建及GithubAction自动化部署踩坑</a></span>
+    <span><a href="/2023/01/20/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
       
@@ -391,7 +393,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/01/20/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2023/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8AGithubAction%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%B8%A9%E5%9D%91/" title="Hexo博客搭建及GithubAction自动化部署踩坑">Hexo博客搭建及GithubAction自动化部署踩坑</a></span>
   </li>
 
   </ul>
@@ -422,7 +424,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">1 mins.</span>
+    <span title="Reading time total">2 mins.</span>
   </div>
   <div class="powered-by">
     Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
