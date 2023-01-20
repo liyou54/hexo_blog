@@ -74,7 +74,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>958</span>
+    <span>954</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -115,12 +115,12 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?743002"></li>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?663586"></li>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?659583"></li>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?978489"></li>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?841692"></li>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?11249"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?535726"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?72944"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?411787"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?753528"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?9511"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?306588"></li>
         </ul>
       </div>
     </header>
@@ -172,7 +172,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
 <h2 id="hexo项目初始化"><a class="markdownIt-Anchor" href="#hexo项目初始化">#</a> Hexo 项目初始化</h2>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#创建项目文件夹，blog _source,这里blog_source 代表项目源文件，但是我们github需要创建两个仓库，一个仓库跟这个文件夹关联，并且自动化发布，另外一个项目用于储存的静态资源。</span></span><br><span class="line">mkdir blog _source</span><br><span class="line"></span><br><span class="line"><span class="comment"># 初始化项目</span></span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载依赖</span></span><br><span class="line">npm i</span><br><span class="line"></span><br><span class="line"><span class="comment">## hexo 清理、生成、预览、发布</span></span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h2 id="hexo-配置文件"><a class="markdownIt-Anchor" href="#hexo-配置文件">#</a> hexo 配置文件</h2>
-<p>hexo 的配置存放在 <span class="kbd red">/_config.yml</span> 以及 <span class="kbd red">/themes/[主题名称]/_config.yml (/_config.[主题名称]/.yml)</span> 中，<br>
+<p>hexo 的配置存放在 <span class="kbd red">/_config.yml</span> 以及 <span class="kbd red">/themes/ 主题名称 /_config.yml</span> <span class="kbd red">(/_config. 主题名称 /.yml)</span> 中，<br>
 这里主要修改 deploy 值，让我们在运行 <mark>hexo d</mark> 时将生成的静态代码发布到该地址上面:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repo:  你的 githubpage 项目地址</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 <h1 id="主题安装"><a class="markdownIt-Anchor" href="#主题安装">#</a> 主题安装</h1>
@@ -194,7 +194,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2023-01-20 12:29:48" itemprop="dateModified" datetime="2023-01-20T12:29:48+00:00">2023-01-20</time>
+    <time title="Modified: 2023-01-20 12:32:40" itemprop="dateModified" datetime="2023-01-20T12:32:40+00:00">2023-01-20</time>
   </span>
   <span id="2023/01/20/Hexo博客搭建及GithubAction自动化部署踩坑/" class="item leancloud_visitors" data-flag-title="Hexo博客搭建及GithubAction自动化部署踩坑" title="Views">
       <span class="icon">
@@ -257,7 +257,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
     <div class="item left">
       
 
-  <a href="/2023/01/20/hello-world/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tuapi.eees.cc&#x2F;api.php?category&#x3D;dongman&amp;type&#x3D;302&amp;?98203" title="Hello World">
+  <a href="/2023/01/20/hello-world/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tuapi.eees.cc&#x2F;api.php?category&#x3D;dongman&amp;type&#x3D;302&amp;?469155" title="Hello World">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>Hello World</h3>
@@ -380,7 +380,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8AGithubAction%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%B8%A9%E5%9D%91/" title="Hexo博客搭建及GithubAction自动化部署踩坑">Hexo博客搭建及GithubAction自动化部署踩坑</a></span>
+    <span><a href="/2023/01/20/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
       
@@ -389,7 +389,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/01/20/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2023/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8AGithubAction%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%B8%A9%E5%9D%91/" title="Hexo博客搭建及GithubAction自动化部署踩坑">Hexo博客搭建及GithubAction自动化部署踩坑</a></span>
   </li>
 
   </ul>
