@@ -74,7 +74,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>954</span>
+    <span>1.2k</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -115,12 +115,12 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?535726"></li>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?72944"></li>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?411787"></li>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?753528"></li>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?9511"></li>
-          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?306588"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?675981"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?898092"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?397811"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?180187"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?648265"></li>
+          <li class="item" data-background-image="https://tuapi.eees.cc/api.php?category=dongman&type=302&?474148"></li>
         </ul>
       </div>
     </header>
@@ -174,14 +174,16 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
 <h2 id="hexo-配置文件"><a class="markdownIt-Anchor" href="#hexo-配置文件">#</a> hexo 配置文件</h2>
 <p>hexo 的配置存放在 <span class="kbd red">/_config.yml</span> 以及 <span class="kbd red">/themes/ 主题名称 /_config.yml</span> <span class="kbd red">(/_config. 主题名称 /.yml)</span> 中，<br>
 这里主要修改 deploy 值，让我们在运行 <mark>hexo d</mark> 时将生成的静态代码发布到该地址上面:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repo:  你的 githubpage 项目地址</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  <span class="attr">repo:</span>  <span class="string">你的</span> <span class="string">githubpage</span> <span class="string">项目地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
 <h1 id="主题安装"><a class="markdownIt-Anchor" href="#主题安装">#</a> 主题安装</h1>
 <p>因为本人是一个<s>肥宅</s> <span class="kbd red">二次元</span>，因此选择了 <span class="exturl" data-url="aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy8=">shoka</span> 这个主题<br>
 安装主题:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># cd your-blog</span></span><br><span class="line">git clone https://github.com/amehime/hexo-theme-shoka.git ./themes/shoka</span><br></pre></td></tr></table></figure>
 <p>这里有两个选择 一种是直接 clone, 另外一种是使用 submodel 的方式，因为我需要修改源码，所以选择 clone 下来然后删除.git 文件夹。<br>
-安装依赖 等可以参考该文档：<span https:shoka.lostyu.mecategoriescomputer-sciencenotetheme-shoka-doc="">shoka doc</span><br>
-<span class="red">Ps:</span> 这里，我们自定义自己的主题配置文件时最好在根目录创建<span class="kbd red">_config.[主题名称]/.yml</span></p>
+安装依赖，主题配置：可以参考该文档：<span class="exturl" data-url="aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY2F0ZWdvcmllcy9jb21wdXRlci1zY2llbmNlL25vdGUvdGhlbWUtc2hva2EtZG9jLw==">shoka doc</span><br>
+<span class="red">Ps:</span> 这里，我们自定义自己的主题配置文件时最好在根目录创建<span class="kbd red">_config. 主题名称 /.yml</span><br>
+<span class="red">Ps1:</span> 搜索需要注册<span class="exturl" data-url="aHR0cHM6Ly93d3cuYWxnb2xpYS5jb20vdXNlcnMvc2lnbl9pbg=="> Algolia</span> 并且在运行<span class="kbd red"> hexo g</span> 之前运行<span class="kbd red"> hexo algolia</span>。然后修改：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">algolia:</span></span><br><span class="line">  <span class="attr">appId:</span> <span class="string">&quot;xxxx&quot;</span></span><br><span class="line">  <span class="attr">apiKey:</span> <span class="string">&quot;xxx&quot;</span></span><br><span class="line">  <span class="attr">adminApiKey:</span> <span class="string">&quot;xxx&quot;</span></span><br><span class="line">  <span class="attr">chunkSize:</span> <span class="number">5000</span></span><br><span class="line">  <span class="attr">indexName:</span> <span class="string">&quot;xxxx&quot;</span></span><br><span class="line">  <span class="attr">fields:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">title</span> <span class="comment">#必须配置</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">path</span> <span class="comment">#必须配置</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">categories</span> <span class="comment">#推荐配置</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">content:strip:truncate,0,4000</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">gallery</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">photos</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">tags</span></span><br></pre></td></tr></table></figure>
 <h1 id="github-acition-自动化部署"><a class="markdownIt-Anchor" href="#github-acition-自动化部署">#</a> Github Acition 自动化部署</h1>
 
   </div>
@@ -194,7 +196,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2023-01-20 12:32:40" itemprop="dateModified" datetime="2023-01-20T12:32:40+00:00">2023-01-20</time>
+    <time title="Modified: 2023-01-20 12:41:56" itemprop="dateModified" datetime="2023-01-20T12:41:56+00:00">2023-01-20</time>
   </span>
   <span id="2023/01/20/Hexo博客搭建及GithubAction自动化部署踩坑/" class="item leancloud_visitors" data-flag-title="Hexo博客搭建及GithubAction自动化部署踩坑" title="Views">
       <span class="icon">
@@ -257,7 +259,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
     <div class="item left">
       
 
-  <a href="/2023/01/20/hello-world/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tuapi.eees.cc&#x2F;api.php?category&#x3D;dongman&amp;type&#x3D;302&amp;?469155" title="Hello World">
+  <a href="/2023/01/20/hello-world/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tuapi.eees.cc&#x2F;api.php?category&#x3D;dongman&amp;type&#x3D;302&amp;?640486" title="Hello World">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>Hello World</h3>
@@ -380,7 +382,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/01/20/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2023/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8AGithubAction%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%B8%A9%E5%9D%91/" title="Hexo博客搭建及GithubAction自动化部署踩坑">Hexo博客搭建及GithubAction自动化部署踩坑</a></span>
   </li>
 
       
@@ -389,7 +391,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8AGithubAction%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E8%B8%A9%E5%9D%91/" title="Hexo博客搭建及GithubAction自动化部署踩坑">Hexo博客搭建及GithubAction自动化部署踩坑</a></span>
+    <span><a href="/2023/01/20/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
   </ul>
@@ -414,7 +416,7 @@ Hexo博客搭建及GithubAction自动化部署踩坑 |
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">1k words</span>
+    <span title="Symbols count total">2k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
