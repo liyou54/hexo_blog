@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Note • All posts by \"unity\" tag",
+    "description": "",
+    "home_page_url": "https://blog.liyou.site",
+    "items": [
+        {
+            "id": "https://blog.liyou.site/2023/01/21/Unity-Ecs-%E5%AD%A6%E4%B9%A0/",
+            "url": "https://blog.liyou.site/2023/01/21/Unity-Ecs-%E5%AD%A6%E4%B9%A0/",
+            "title": "Unity Ecs 学习",
+            "date_published": "2023-01-21T11:25:16.000Z",
+            "content_html": "<h1 id=\"安装\"><a class=\"markdownIt-Anchor\" href=\"#安装\">#</a> 安装</h1>\n<p>com.unity.entities</p>\n<h1 id=\"jobstype\"><a class=\"markdownIt-Anchor\" href=\"#jobstype\">#</a> JobsType</h1>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br><span class=\"line\">8</span><br><span class=\"line\">9</span><br><span class=\"line\">10</span><br><span class=\"line\">11</span><br><span class=\"line\">12</span><br><span class=\"line\">13</span><br><span class=\"line\">14</span><br><span class=\"line\">15</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">IJobParallelForTransform</span><br><span class=\"line\">Ijob</span><br><span class=\"line\">IJobParallelFor</span><br><span class=\"line\">IjobFor</span><br><span class=\"line\">IJobBurstSchedulable</span><br><span class=\"line\">IJobParallelForDefer</span><br><span class=\"line\">IJobParallelForBatch</span><br><span class=\"line\">IJobParallelForFilter</span><br><span class=\"line\">...</span><br><span class=\"line\"></span><br><span class=\"line\">Job调度：</span><br><span class=\"line\">Run 主线程立即执行</span><br><span class=\"line\">Schedule 单个工作线程或者主线程执行，顺序执行</span><br><span class=\"line\">ScheduleParallel 多个工作线程执行 数据访问产生冲突</span><br><span class=\"line\"></span><br></pre></td></tr></table></figure>",
+            "tags": [
+                "Unity"
+            ]
+        }
+    ]
+}
